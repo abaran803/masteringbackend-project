@@ -27,6 +27,7 @@ db.sequelize = sequelize;
 
 //connecting to models which are the users and the tokens schema
 db.users = require("../modules/auth/model")(sequelize, DataTypes);
+db.ingredients = require("../modules/ingredient/model")(sequelize, DataTypes);
 
 //exporting the module
 module.exports = db;

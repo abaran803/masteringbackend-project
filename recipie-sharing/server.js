@@ -4,9 +4,7 @@ const http = require("http");
 const app = require("./app");
 const db = require("./model");
 
-db.sequelize.sync({ force: true }).then(() => {
-  console.log("Drop and Resync Db");
-});
+db.sequelize.sync();
 
 const server = http.createServer(app);
 
