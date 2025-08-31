@@ -67,25 +67,18 @@ const updateIngredient = async (req, res, next) => {
         message: "Ingredient id and name is required",
       });
     }
-    const matchingIngredient = await Ingredients.findByPk(id);
-    if (!matchingIngredient) {
+    const ingredient = await Ingredients.findByPk(id);
+    if (!ingredient) {
       return res.status(404).send({
         message: "Ingredient not found",
       });
     }
-    if (matchingIngredient.name === updatedName) {
+    if (ingredient.name === updatedName) {
       return res.status(409).send({
         message: "No update found",
       });
     }
-    await Ingredients.update(
-      { name: updatedName },
-      {
-        where: {
-          id,
-        },
-      }
-    );
+    await ingredient.update({ name: updatedName });
     res.status(200).send({
       message: "Ingredient updated successfully",
     });

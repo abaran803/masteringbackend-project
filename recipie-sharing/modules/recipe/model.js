@@ -1,4 +1,4 @@
-module.exports = (sequelize, DataTypes) => {
+const recipe = (sequelize, DataTypes) => {
   const Recipe = sequelize.define(
     "recipe",
     {
@@ -26,4 +26,33 @@ module.exports = (sequelize, DataTypes) => {
   );
 
   return Recipe;
+};
+
+const recipeIngredient = (sequelize, DataTypes) => {
+  const RecipeIngredient = sequelize.define(
+    "recipeIngredient",
+    {
+      id: {
+        type: DataTypes.UUID,
+        defaultValue: DataTypes.UUIDV4,
+        primaryKey: true,
+      },
+      recipe_id: {
+        type: DataTypes.UUID,
+        allowNull: false,
+      },
+      ingredient_id: {
+        type: DataTypes.UUID,
+        allowNull: false,
+      },
+    },
+    { timestamps: true }
+  );
+
+  return RecipeIngredient;
+};
+
+module.exports = {
+  recipe,
+  recipeIngredient,
 };

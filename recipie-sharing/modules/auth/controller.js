@@ -4,18 +4,17 @@ var bcrypt = require("bcrypt");
 
 const User = db.users;
 
-exports.signup = (req, res) => {
-  User.create({
-    username: req.body.username,
-    email: req.body.email,
-    password: bcrypt.hashSync(req.body.password, 8),
-  })
-    .then(() => {
-      res.send({ message: "User was registered successfully!" });
-    })
-    .catch((err) => {
-      res.status(500).send({ message: err.message });
+exports.signup = async (req, res) => {
+  try {
+    await User.create({
+      username: req.body.username,
+      email: req.body.email,
+      password: bcrypt.hashSync(req.body.password, 8),
     });
+    res.send({ message: "User was registered successfully!" });
+  } catch (err) {
+    next(err);
+  }
 };
 
 exports.signin = (req, res) => {
