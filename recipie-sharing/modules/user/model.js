@@ -1,4 +1,4 @@
-module.exports = (sequelize, DataTypes) => {
+const user = (sequelize, DataTypes) => {
   const User = sequelize.define(
     "user",
     {
@@ -31,3 +31,29 @@ module.exports = (sequelize, DataTypes) => {
 
   return User;
 };
+
+const follow = (sequelize, DataTypes) => {
+  const Follow = sequelize.define(
+    "follow",
+    {
+      id: {
+        type: DataTypes.UUID,
+        defaultValue: DataTypes.UUIDV4,
+        primaryKey: true,
+      },
+      follower_id: {
+        type: DataTypes.UUID,
+        allowNull: false,
+      },
+      following_id: {
+        type: DataTypes.UUID,
+        allowNull: false,
+      },
+    },
+    { timestamps: true }
+  );
+
+  return Follow;
+};
+
+module.exports = { user, follow };
