@@ -3,9 +3,12 @@ const db = require("../../model");
 const Recipe = db.recipies;
 
 const createRecipe = async (req, res, next) => {
+  const t = await db.sequelize.transaction();
   try {
-    const { title, instruction, photos, created_by, ingredients } = req.body;
+    const { title, instruction, photos, created_by, ingredients, tags } =
+      req.body;
     if (!title || !created_by) {
+      await t.rollback();
       return res.status(400).send({
         message: "Title and created by is required",
       });
@@ -14,25 +17,36 @@ const createRecipe = async (req, res, next) => {
       where: {
         title,
       },
+      transaction: t,
+      lock: t.LOCK.UPDATE,
     });
     if (matchingRecipe) {
+      await t.rollback();
       return res.status(409).send({
         message: "Recipe already exist",
       });
     }
-    const recipe = await Recipe.create({
-      title,
-      instruction,
-      photos,
-      created_by,
-    });
+    const recipe = await Recipe.create(
+      {
+        title,
+        instruction,
+        photos,
+        created_by,
+      },
+      { transaction: t }
+    );
     if (ingredients?.length) {
-      await recipe.addIngredients(ingredients);
+      await recipe.addIngredients(ingredients, { transaction: t });
     }
+    if (tags?.length) {
+      await recipe.addTags(tags, { transaction: t });
+    }
+    await t.commit();
     res.status(200).send({
       message: "Recipe Created",
     });
   } catch (err) {
+    await t.rollback();
     next(err);
   }
 };
@@ -53,12 +67,20 @@ const getAllRecipe = async (req, res, next) => {
             attributes: [],
           },
         },
+        {
+          model: db.tags,
+          attributes: ["name"],
+          through: {
+            attributes: [],
+          },
+        },
       ],
       attributes: { exclude: "created_by" },
     });
     const transformed = recipies.map((r) => {
       const recipe = r.toJSON();
       recipe.ingredients = recipe.ingredients.map((i) => i.name);
+      recipe.tags = recipe.tags.map((i) => i.name);
       return recipe;
     });
     res.status(200).send({
@@ -85,6 +107,13 @@ const getRecipeById = async (req, res, next) => {
         },
         {
           model: db.ingredients,
+          attributes: ["name"],
+          through: {
+            attributes: [],
+          },
+        },
+        {
+          model: db.tags,
           attributes: ["name"],
           through: {
             attributes: [],
