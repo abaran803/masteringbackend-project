@@ -37,6 +37,15 @@ db.recipeIngredients = require("../modules/recipe/model").recipeIngredient(
 db.tags = require("../modules/tag/model").tag(sequelize, DataTypes);
 db.recipeTags = require("../modules/tag/model").recipeTag(sequelize, DataTypes);
 
+db.categories = require("../modules/category/model").category(
+  sequelize,
+  DataTypes
+);
+db.recipeCategories = require("../modules/category/model").recipeCategory(
+  sequelize,
+  DataTypes
+);
+
 db.users.hasMany(db.recipies, { as: "created_by", foreignKey: "created_by" });
 db.recipies.belongsTo(db.users, { foreignKey: "created_by", as: "creater" });
 
@@ -75,6 +84,18 @@ db.recipies.belongsToMany(db.tags, {
 db.tags.belongsToMany(db.recipies, {
   through: db.recipeTags,
   foreignKey: "tag_id",
+  otherKey: "recipe_id",
+});
+
+db.recipies.belongsToMany(db.categories, {
+  through: db.recipeCategories,
+  foreignKey: "recipe_id",
+  otherKey: "categoty_id",
+});
+
+db.categories.belongsToMany(db.recipies, {
+  through: db.recipeCategories,
+  foreignKey: "categoty_id",
   otherKey: "recipe_id",
 });
 
