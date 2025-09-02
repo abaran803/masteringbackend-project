@@ -45,6 +45,7 @@ db.recipeCategories = require("../modules/category/model").recipeCategory(
   sequelize,
   DataTypes
 );
+db.comments = require("../modules/comment/model")(sequelize, DataTypes);
 
 db.users.hasMany(db.recipies, { as: "created_by", foreignKey: "created_by" });
 db.recipies.belongsTo(db.users, { foreignKey: "created_by", as: "creater" });
@@ -96,6 +97,18 @@ db.recipies.belongsToMany(db.categories, {
 db.categories.belongsToMany(db.recipies, {
   through: db.recipeCategories,
   foreignKey: "categoty_id",
+  otherKey: "recipe_id",
+});
+
+db.recipies.belongsToMany(db.users, {
+  through: db.comments,
+  foreignKey: "recipe_id",
+  otherKey: "user_id",
+});
+
+db.users.belongsToMany(db.recipies, {
+  through: db.comments,
+  foreignKey: "user_id",
   otherKey: "recipe_id",
 });
 
