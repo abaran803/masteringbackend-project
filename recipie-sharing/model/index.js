@@ -47,6 +47,10 @@ db.recipeCategories = require("../modules/category/model").recipeCategory(
 );
 db.comments = require("../modules/comment/model")(sequelize, DataTypes);
 db.ratings = require("../modules/rating/model")(sequelize, DataTypes);
+db.notifications = require("../modules/notification/model")(
+  sequelize,
+  DataTypes
+);
 
 db.users.hasMany(db.recipies, { as: "created_by", foreignKey: "created_by" });
 db.recipies.belongsTo(db.users, { foreignKey: "created_by", as: "creater" });
@@ -124,6 +128,9 @@ db.users.belongsToMany(db.recipies, {
   foreignKey: "user_id",
   otherKey: "recipe_id",
 });
+
+db.users.hasMany(db.notifications, { foreignKey: "user_id" });
+db.notifications.belongsTo(db.users, { foreignKey: "user_id" });
 
 //exporting the module
 module.exports = db;
