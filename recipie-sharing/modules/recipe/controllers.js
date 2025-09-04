@@ -5,8 +5,7 @@ const Recipe = db.recipies;
 const createRecipe = async (req, res, next) => {
   const t = await db.sequelize.transaction();
   try {
-    const { title, instruction, photos, created_by, ingredients, tags } =
-      req.body;
+    const { title, instruction, created_by, ingredients, tags } = req.body;
     if (!title || !created_by) {
       await t.rollback();
       return res.status(400).send({
@@ -30,7 +29,7 @@ const createRecipe = async (req, res, next) => {
       {
         title,
         instruction,
-        photos,
+        photos: req.uploadedUrls,
         created_by,
       },
       { transaction: t }

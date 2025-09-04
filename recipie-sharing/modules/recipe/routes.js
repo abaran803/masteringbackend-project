@@ -7,8 +7,12 @@ const {
   deleteRecipe,
 } = require("./controllers");
 const router = express.Router();
+const multer = require("multer");
+const uploadFile = require("../../middleware/uploadFile");
 
-router.post("/", createRecipe);
+const upload = multer({ dest: "uploads/" });
+
+router.post("/", upload.array("photos"), uploadFile, createRecipe);
 router.get("/", getAllRecipe);
 router.get("/:id", getRecipeById);
 router.put("/:id", updateRecipe);
