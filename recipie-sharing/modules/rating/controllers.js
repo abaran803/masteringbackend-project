@@ -17,8 +17,9 @@ const createRating = async (req, res, next) => {
       },
     });
     if (matchingRating) {
-      return res.status(409).send({
-        message: "Rating already exist",
+      matchingRating.update({ rating });
+      return res.status(200).send({
+        message: "Rating updated",
       });
     }
     await Rating.create({

@@ -56,4 +56,28 @@ const follow = (sequelize, DataTypes) => {
   return Follow;
 };
 
-module.exports = { user, follow };
+const favouriteRecipe = (sequelize, DataTypes) => {
+  const FavouriteRecipe = sequelize.define(
+    "favouriteRecipe",
+    {
+      id: {
+        type: DataTypes.UUID,
+        defaultValue: DataTypes.UUIDV4,
+        primaryKey: true,
+      },
+      recipe_id: {
+        type: DataTypes.UUID,
+        allowNull: false,
+      },
+      user_id: {
+        type: DataTypes.UUID,
+        allowNull: false,
+      },
+    },
+    { timestamps: true }
+  );
+
+  return FavouriteRecipe;
+};
+
+module.exports = { user, follow, favouriteRecipe };

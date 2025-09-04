@@ -21,24 +21,22 @@ async function uploadFileToGCS(localFilePath, destination) {
 
 const uploadFile = async (req, res, next) => {
   if (!req.files || req.files.length === 0) {
-    return res
-      .status(400)
-      .json({ success: false, message: "No files uploaded" });
-  }
+    next();
+  } else {
+    const results = [];
+    for (const file of req.files) {
+      const localFilePath = file.path;
+      const destination = `recipe-sharing/recipe/photos/${Date.now()}_${
+        file.originalname
+      }`;
 
-  const results = [];
-  for (const file of req.files) {
-    const localFilePath = file.path;
-    const destination = `recipe-sharing/recipe/photos/${Date.now()}_${
-      file.originalname
-    }`;
-
-    const { url } = await uploadFileToGCS(localFilePath, destination);
-    results.push({ filename: file.originalname, url });
-    fs.unlinkSync(localFilePath);
+      const { url } = await uploadFileToGCS(localFilePath, destination);
+      results.push({ filename: file.originalname, url });
+      fs.unlinkSync(localFilePath);
+    }
+    req.uploadedUrls = results.map((item) => item.url);
+    next();
   }
-  req.uploadedUrls = results.map((item) => item.url);
-  next();
 };
 
 module.exports = uploadFile;

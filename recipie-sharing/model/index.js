@@ -1,4 +1,5 @@
 const { Sequelize, DataTypes } = require("sequelize");
+const sendNotification = require("../helper/sendNotification");
 
 const sequelize = new Sequelize(
   process.env.DB_DATABASE,
@@ -28,6 +29,10 @@ db.sequelize = sequelize;
 //connecting to models which are the users and the tokens schema
 db.users = require("../modules/user/model").user(sequelize, DataTypes);
 db.follows = require("../modules/user/model").follow(sequelize, DataTypes);
+db.favouriteRecipe = require("../modules/user/model").favouriteRecipe(
+  sequelize,
+  DataTypes
+);
 db.ingredients = require("../modules/ingredient/model")(sequelize, DataTypes);
 db.recipies = require("../modules/recipe/model").recipe(sequelize, DataTypes);
 db.recipeIngredients = require("../modules/recipe/model").recipeIngredient(
@@ -52,7 +57,7 @@ db.notifications = require("../modules/notification/model")(
   DataTypes
 );
 
-db.users.hasMany(db.recipies, { as: "created_by", foreignKey: "created_by" });
+db.users.hasMany(db.recipies, { as: "creater", foreignKey: "created_by" });
 db.recipies.belongsTo(db.users, { foreignKey: "created_by", as: "creater" });
 
 db.recipies.belongsToMany(db.ingredients, {
@@ -96,41 +101,101 @@ db.tags.belongsToMany(db.recipies, {
 db.recipies.belongsToMany(db.categories, {
   through: db.recipeCategories,
   foreignKey: "recipe_id",
-  otherKey: "categoty_id",
+  otherKey: "category_id",
 });
 
 db.categories.belongsToMany(db.recipies, {
   through: db.recipeCategories,
-  foreignKey: "categoty_id",
+  foreignKey: "category_id",
   otherKey: "recipe_id",
 });
 
 db.recipies.belongsToMany(db.users, {
-  through: db.comments,
+  through: { model: db.comments, unique: false },
+  as: "CommentedBy",
   foreignKey: "recipe_id",
   otherKey: "user_id",
 });
 
 db.users.belongsToMany(db.recipies, {
-  through: db.comments,
+  through: { model: db.comments, unique: false },
+  as: "CommentedRecipe",
   foreignKey: "user_id",
   otherKey: "recipe_id",
 });
 
 db.recipies.belongsToMany(db.users, {
   through: db.ratings,
+  as: "RatedBy",
   foreignKey: "recipe_id",
   otherKey: "user_id",
 });
 
 db.users.belongsToMany(db.recipies, {
   through: db.ratings,
+  as: "RatedRacipe",
   foreignKey: "user_id",
   otherKey: "recipe_id",
 });
 
 db.users.hasMany(db.notifications, { foreignKey: "user_id" });
 db.notifications.belongsTo(db.users, { foreignKey: "user_id" });
+
+db.users.belongsToMany(db.recipies, {
+  through: db.favouriteRecipe,
+  as: "FavouriteRecipes",
+  foreignKey: "user_id",
+  otherKey: "recipe_id",
+});
+
+db.recipies.belongsToMany(db.users, {
+  through: db.favouriteRecipe,
+  as: "FavouritedBy",
+  foreignKey: "recipe_id",
+  otherKey: "user_id",
+});
+
+db.comments.afterCreate(
+  "commentHookAfterCreate",
+  async (commentData, _options) => {
+    const { recipe_id: recipeId, user_id: userId } = commentData.toJSON();
+    sendNotification(recipeId, userId, db, "comment", "created");
+  }
+);
+
+db.ratings.afterCreate(
+  "ratingHookAfterCreate",
+  async (ratingData, _options) => {
+    const { recipe_id: recipeId, user_id: userId } = ratingData.toJSON();
+    sendNotification(recipeId, userId, db, "rating", "created");
+  }
+);
+
+db.ratings.afterUpdate(
+  "ratingHookAfterUpdate",
+  async (ratingData, _options) => {
+    const { recipe_id: recipeId, user_id: userId } = ratingData.toJSON();
+    sendNotification(recipeId, userId, db, "rating", "updated");
+  }
+);
+
+db.recipies.afterUpdate(
+  "recipeHookAfterUpdate",
+  async (recipeData, _options) => {
+    const { id: recipeId, created_by: userId } = recipeData.toJSON();
+    sendNotification(recipeId, userId, db, "recipe", "updated");
+  }
+);
+
+// db.follows.afterCreate(
+//   "followHookAfterCreate",
+//   async (followData, _options) => {
+//     console.log(followData.toJSON());
+//     const { follower_id: followerId, following_id: followingId } =
+//       followData.toJSON();
+//     sendNotification(followerId, followingId, db, "follower", "created");
+//   }
+// );
 
 //exporting the module
 module.exports = db;
