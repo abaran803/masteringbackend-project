@@ -1,0 +1,146 @@
+[
+  {
+    "id": "a1f9d3a0-9c2f-4f6b-a4d2-0f1b3e8e1c2a",
+    "title": "Spaghetti Carbonara",
+    "instruction": "1. Boil spaghetti until al dente.\n2. Cook pancetta in a pan.\n3. Mix eggs and parmesan.\n4. Combine spaghetti with pancetta and egg mixture.\n5. Season with black pepper.",
+    "photos": [
+      "https://images.unsplash.com/photo-1604908177522-87e66b163d49",
+      "https://images.unsplash.com/photo-1600891964599-f61ba0e24092"
+    ],
+    "created_by": "4551ca35-61cd-4c23-8a73-3ca969415782",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "b2e8c7f2-4b0c-4a7d-91b7-0a1d0f0b0e1d",
+    "title": "Chicken Tikka Masala",
+    "instruction": "1. Marinate chicken in yogurt and spices.\n2. Grill chicken until cooked.\n3. Prepare tomato-based sauce with cream.\n4. Combine chicken with sauce.\n5. Serve with rice or naan.",
+    "photos": [
+      "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f",
+      "https://images.unsplash.com/photo-1605478587760-38f0375e22b8"
+    ],
+    "created_by": "31d89d6e-95ab-4b97-bfdc-3d05748c1e5b",
+    "createdAt": "2025-09-05T12:10:00Z",
+    "updatedAt": "2025-09-05T12:10:00Z"
+  },
+  {
+    "id": "c3d4b5a6-7e8f-49d0-b2c3-0a1e2f3b4c5d",
+    "title": "Beef Stir Fry",
+    "instruction": "1. Slice beef thinly.\n2. Stir fry beef with garlic and soy sauce.\n3. Add vegetables (bell peppers, broccoli).\n4. Cook until vegetables are tender.\n5. Serve with steamed rice.",
+    "photos": [
+      "https://images.unsplash.com/photo-1604908177522-87e66b163d49",
+      "https://images.unsplash.com/photo-1617196034708-f8e4c648c967"
+    ],
+    "created_by": "75d300f6-0310-4ec2-a0ba-3a1f518e297e",
+    "createdAt": "2025-09-05T12:20:00Z",
+    "updatedAt": "2025-09-05T12:20:00Z"
+  },
+  {
+    "id": "d4e5f6a7-8b9c-40d1-92e3-1f2a3b4c5d6e",
+    "title": "Vegetable Pad Thai",
+    "instruction": "1. Soak rice noodles.\n2. Stir fry tofu and vegetables.\n3. Add noodles and pad thai sauce.\n4. Mix well and garnish with peanuts and lime.",
+    "photos": [
+      "https://images.unsplash.com/photo-1553621042-f6e147245754",
+      "https://images.unsplash.com/photo-1600891964599-f61ba0e24092"
+    ],
+    "created_by": "f2479a67-51ae-4f0f-bed8-fb97fa4a0f60",
+    "createdAt": "2025-09-05T12:30:00Z",
+    "updatedAt": "2025-09-05T12:30:00Z"
+  },
+  {
+    "id": "e5f6a7b8-9c0d-41e2-b3f4-2f3b4c5d6e7f",
+    "title": "Margherita Pizza",
+    "instruction": "1. Prepare pizza dough.\n2. Spread tomato sauce.\n3. Add mozzarella and basil.\n4. Bake at 220°C for 12–15 mins.\n5. Drizzle with olive oil and serve.",
+    "photos": [
+      "https://images.unsplash.com/photo-1603073442513-67f3c3c7b4d1",
+      "https://images.unsplash.com/photo-1604917868305-2a897fe31753"
+    ],
+    "created_by": "8bba1b72-9a09-431e-a673-185c398509b8",
+    "createdAt": "2025-09-05T12:40:00Z",
+    "updatedAt": "2025-09-05T12:40:00Z"
+  },
+  {
+    "id": "f6a7b8c9-0d1e-42f3-c4b5-3f4c5d6e7f8a",
+    "title": "Chocolate Brownies",
+    "instruction": "1. Preheat oven to 180°C.\n2. Mix melted chocolate, butter, sugar, and eggs.\n3. Fold in flour.\n4. Pour into baking tray.\n5. Bake 25–30 mins and cool.",
+    "photos": [
+      "https://images.unsplash.com/photo-1605478587760-38f0375e22b8",
+      "https://images.unsplash.com/photo-1604908177522-87e66b163d49"
+    ],
+    "created_by": "0e9fd142-e4fd-4789-98d4-ae49405b814a",
+    "createdAt": "2025-09-05T12:50:00Z",
+    "updatedAt": "2025-09-05T12:50:00Z"
+  },
+  {
+    "id": "a7b8c9d0-1e2f-43a4-d5b6-4f5d6e7f8a9b",
+    "title": "Grilled Salmon",
+    "instruction": "1. Season salmon with salt, pepper, and lemon.\n2. Grill 5–7 mins per side.\n3. Serve with steamed vegetables and rice.",
+    "photos": [
+      "https://images.unsplash.com/photo-1617196034708-f8e4c648c967",
+      "https://images.unsplash.com/photo-1600891964599-f61ba0e24092"
+    ],
+    "created_by": "228cfd3d-017d-4712-af93-0b37fcc1a3c4",
+    "createdAt": "2025-09-05T13:00:00Z",
+    "updatedAt": "2025-09-05T13:00:00Z"
+  },
+  {
+    "id": "b8c9d0e1-2f3a-44b5-e6c7-5f6e7f8a9b0c",
+    "title": "Caesar Salad",
+    "instruction": "1. Chop romaine lettuce.\n2. Add croutons and parmesan.\n3. Toss with Caesar dressing.\n4. Serve chilled.",
+    "photos": [
+      "https://images.unsplash.com/photo-1553621042-f6e147245754",
+      "https://images.unsplash.com/photo-1604917868305-2a897fe31753"
+    ],
+    "created_by": "c00353b0-5a11-4b6d-a94e-64d547a26722",
+    "createdAt": "2025-09-05T13:10:00Z",
+    "updatedAt": "2025-09-05T13:10:00Z"
+  },
+  {
+    "id": "c9d0e1f2-3a4b-45c6-f7d8-6f7f8a9b0c1d",
+    "title": "Shrimp Fried Rice",
+    "instruction": "1. Cook rice and let cool.\n2. Stir fry shrimp with garlic.\n3. Add vegetables and rice.\n4. Season with soy sauce.\n5. Serve hot.",
+    "photos": [
+      "https://images.unsplash.com/photo-1603073442513-67f3c3c7b4d1",
+      "https://images.unsplash.com/photo-1605478587760-38f0375e22b8"
+    ],
+    "created_by": "13c754c5-8c75-4ecd-b0f0-349cfe532fec",
+    "createdAt": "2025-09-05T13:20:00Z",
+    "updatedAt": "2025-09-05T13:20:00Z"
+  },
+  {
+    "id": "d0e1f2a3-4b5c-46d7-g8h9-7g8h9a0b1c2d",
+    "title": "Tom Yum Soup",
+    "instruction": "1. Boil chicken stock.\n2. Add lemongrass, lime leaves, galangal.\n3. Add shrimp and mushrooms.\n4. Season with lime juice, fish sauce, and chili.\n5. Serve hot.",
+    "photos": [
+      "https://images.unsplash.com/photo-1600891964599-f61ba0e24092",
+      "https://images.unsplash.com/photo-1617196034708-f8e4c648c967"
+    ],
+    "created_by": "7a91bac5-0e44-4435-820c-d3e8ca268cc7",
+    "createdAt": "2025-09-05T13:30:00Z",
+    "updatedAt": "2025-09-05T13:30:00Z"
+  },
+  {
+    "id": "e1f2a3b4-5c6d-47e8-h9i0-8h9i0a1b2c3d",
+    "title": "Pancakes",
+    "instruction": "1. Mix flour, milk, eggs, and sugar.\n2. Heat pan and pour batter.\n3. Cook until golden on both sides.\n4. Serve with syrup and fruits.",
+    "photos": [
+      "https://images.unsplash.com/photo-1604908177522-87e66b163d49",
+      "https://images.unsplash.com/photo-1603073442513-67f3c3c7b4d1"
+    ],
+    "created_by": "ede8@cnet.com",
+    "createdAt": "2025-09-05T13:40:00Z",
+    "updatedAt": "2025-09-05T13:40:00Z"
+  },
+  {
+    "id": "f2a3b4c5-6d7e-48f9-i0j1-9i0j1a2b3c4d",
+    "title": "Lasagna",
+    "instruction": "1. Prepare meat sauce.\n2. Boil lasagna noodles.\n3. Layer noodles, sauce, and cheese.\n4. Bake at 180°C for 45 mins.\n5. Let cool and serve.",
+    "photos": [
+      "https://images.unsplash.com/photo-1604917868305-2a897fe31753",
+      "https://images.unsplash.com/photo-1600891964599-f61ba0e24092"
+    ],
+    "created_by": "asigward9@ucoz.com",
+    "createdAt": "2025-09-05T13:50:00Z",
+    "updatedAt": "2025-09-05T13:50:00Z"
+  }
+]

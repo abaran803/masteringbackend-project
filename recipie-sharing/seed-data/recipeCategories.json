@@ -1,0 +1,86 @@
+[
+  {
+    "id": "rc001",
+    "recipe_id": "a1f9d3a0-9c2f-4f6b-a4d2-0f1b3e8e1c2a",
+    "category_id": "c1a1f001-1a1f-4a1b-b1c1-111111111111",
+    "createdAt": "2025-09-05T12:10:00Z",
+    "updatedAt": "2025-09-05T12:10:00Z"
+  },
+  {
+    "id": "rc002",
+    "recipe_id": "a1f9d3a0-9c2f-4f6b-a4d2-0f1b3e8e1c2a",
+    "category_id": "c1a1f005-1a1f-4a1b-b1c1-555555555555",
+    "createdAt": "2025-09-05T12:11:00Z",
+    "updatedAt": "2025-09-05T12:11:00Z"
+  },
+  {
+    "id": "rc003",
+    "recipe_id": "b2e8c7f2-4b0c-4a7d-91b7-0a1d0f0b0e1d",
+    "category_id": "c1a1f002-1a1f-4a1b-b1c1-222222222222",
+    "createdAt": "2025-09-05T12:12:00Z",
+    "updatedAt": "2025-09-05T12:12:00Z"
+  },
+  {
+    "id": "rc004",
+    "recipe_id": "b2e8c7f2-4b0c-4a7d-91b7-0a1d0f0b0e1d",
+    "category_id": "c1a1f005-1a1f-4a1b-b1c1-555555555555",
+    "createdAt": "2025-09-05T12:13:00Z",
+    "updatedAt": "2025-09-05T12:13:00Z"
+  },
+  {
+    "id": "rc005",
+    "recipe_id": "d4e5f6a7-8b9c-40d1-92e3-1f2a3b4c5d6e",
+    "category_id": "c1a1f003-1a1f-4a1b-b1c1-333333333333",
+    "createdAt": "2025-09-05T12:14:00Z",
+    "updatedAt": "2025-09-05T12:14:00Z"
+  },
+  {
+    "id": "rc006",
+    "recipe_id": "d4e5f6a7-8b9c-40d1-92e3-1f2a3b4c5d6e",
+    "category_id": "c1a1f006-1a1f-4a1b-b1c1-666666666666",
+    "createdAt": "2025-09-05T12:15:00Z",
+    "updatedAt": "2025-09-05T12:15:00Z"
+  },
+  {
+    "id": "rc007",
+    "recipe_id": "e5f6a7b8-9c0d-41e2-b3f4-2f3b4c5d6e7f",
+    "category_id": "c1a1f001-1a1f-4a1b-b1c1-111111111111",
+    "createdAt": "2025-09-05T12:16:00Z",
+    "updatedAt": "2025-09-05T12:16:00Z"
+  },
+  {
+    "id": "rc008",
+    "recipe_id": "e5f6a7b8-9c0d-41e2-b3f4-2f3b4c5d6e7f",
+    "category_id": "c1a1f005-1a1f-4a1b-b1c1-555555555555",
+    "createdAt": "2025-09-05T12:17:00Z",
+    "updatedAt": "2025-09-05T12:17:00Z"
+  },
+  {
+    "id": "rc009",
+    "recipe_id": "f6a7b8c9-0d1e-42f3-c4b5-3f4c5d6e7f8a",
+    "category_id": "c1a1f004-1a1f-4a1b-b1c1-444444444444",
+    "createdAt": "2025-09-05T12:18:00Z",
+    "updatedAt": "2025-09-05T12:18:00Z"
+  },
+  {
+    "id": "rc010",
+    "recipe_id": "f6a7b8c9-0d1e-42f3-c4b5-3f4c5d6e7f8a",
+    "category_id": "c1a1f006-1a1f-4a1b-b1c1-666666666666",
+    "createdAt": "2025-09-05T12:19:00Z",
+    "updatedAt": "2025-09-05T12:19:00Z"
+  },
+  {
+    "id": "rc011",
+    "recipe_id": "a7b8c9d0-1e2f-43a4-d5b6-4f5d6e7f8a9b",
+    "category_id": "c1a1f008-1a1f-4a1b-b1c1-888888888888",
+    "createdAt": "2025-09-05T12:20:00Z",
+    "updatedAt": "2025-09-05T12:20:00Z"
+  },
+  {
+    "id": "rc012",
+    "recipe_id": "a7b8c9d0-1e2f-43a4-d5b6-4f5d6e7f8a9b",
+    "category_id": "c1a1f005-1a1f-4a1b-b1c1-555555555555",
+    "createdAt": "2025-09-05T12:21:00Z",
+    "updatedAt": "2025-09-05T12:21:00Z"
+  }
+]

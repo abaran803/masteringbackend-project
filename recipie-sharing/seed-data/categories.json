@@ -1,0 +1,58 @@
+[
+  {
+    "id": "c1a1f001-1a1f-4a1b-b1c1-111111111111",
+    "name": "Italian",
+    "type": "cuisine type",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "c1a1f002-1a1f-4a1b-b1c1-222222222222",
+    "name": "Indian",
+    "type": "cuisine type",
+    "createdAt": "2025-09-05T12:01:00Z",
+    "updatedAt": "2025-09-05T12:01:00Z"
+  },
+  {
+    "id": "c1a1f003-1a1f-4a1b-b1c1-333333333333",
+    "name": "Thai",
+    "type": "cuisine type",
+    "createdAt": "2025-09-05T12:02:00Z",
+    "updatedAt": "2025-09-05T12:02:00Z"
+  },
+  {
+    "id": "c1a1f004-1a1f-4a1b-b1c1-444444444444",
+    "name": "Breakfast",
+    "type": "meal type",
+    "createdAt": "2025-09-05T12:03:00Z",
+    "updatedAt": "2025-09-05T12:03:00Z"
+  },
+  {
+    "id": "c1a1f005-1a1f-4a1b-b1c1-555555555555",
+    "name": "Dinner",
+    "type": "meal type",
+    "createdAt": "2025-09-05T12:04:00Z",
+    "updatedAt": "2025-09-05T12:04:00Z"
+  },
+  {
+    "id": "c1a1f006-1a1f-4a1b-b1c1-666666666666",
+    "name": "Vegetarian",
+    "type": "dietary restriction",
+    "createdAt": "2025-09-05T12:05:00Z",
+    "updatedAt": "2025-09-05T12:05:00Z"
+  },
+  {
+    "id": "c1a1f007-1a1f-4a1b-b1c1-777777777777",
+    "name": "Gluten-Free",
+    "type": "dietary restriction",
+    "createdAt": "2025-09-05T12:06:00Z",
+    "updatedAt": "2025-09-05T12:06:00Z"
+  },
+  {
+    "id": "c1a1f008-1a1f-4a1b-b1c1-888888888888",
+    "name": "Seafood",
+    "type": "dietary restriction",
+    "createdAt": "2025-09-05T12:07:00Z",
+    "updatedAt": "2025-09-05T12:07:00Z"
+  }
+]

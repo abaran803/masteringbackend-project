@@ -1,0 +1,86 @@
+[
+  {
+    "id": "uf001",
+    "follower_id": "4551ca35-61cd-4c23-8a73-3ca969415782",
+    "following_id": "31d89d6e-95ab-4b97-bfdc-3d05748c1e5b",
+    "createdAt": "2025-09-05T19:00:00Z",
+    "updatedAt": "2025-09-05T19:00:00Z"
+  },
+  {
+    "id": "uf002",
+    "follower_id": "4551ca35-61cd-4c23-8a73-3ca969415782",
+    "following_id": "75d300f6-0310-4ec2-a0ba-3a1f518e297e",
+    "createdAt": "2025-09-05T19:05:00Z",
+    "updatedAt": "2025-09-05T19:05:00Z"
+  },
+  {
+    "id": "uf003",
+    "follower_id": "31d89d6e-95ab-4b97-bfdc-3d05748c1e5b",
+    "following_id": "f2479a67-51ae-4f0f-bed8-fb97fa4a0f60",
+    "createdAt": "2025-09-05T19:10:00Z",
+    "updatedAt": "2025-09-05T19:10:00Z"
+  },
+  {
+    "id": "uf004",
+    "follower_id": "31d89d6e-95ab-4b97-bfdc-3d05748c1e5b",
+    "following_id": "8bba1b72-9a09-431e-a673-185c398509b8",
+    "createdAt": "2025-09-05T19:15:00Z",
+    "updatedAt": "2025-09-05T19:15:00Z"
+  },
+  {
+    "id": "uf005",
+    "follower_id": "75d300f6-0310-4ec2-a0ba-3a1f518e297e",
+    "following_id": "0e9fd142-e4fd-4789-98d4-ae49405b814a",
+    "createdAt": "2025-09-05T19:20:00Z",
+    "updatedAt": "2025-09-05T19:20:00Z"
+  },
+  {
+    "id": "uf006",
+    "follower_id": "75d300f6-0310-4ec2-a0ba-3a1f518e297e",
+    "following_id": "228cfd3d-017d-4712-af93-0b37fcc1a3c4",
+    "createdAt": "2025-09-05T19:25:00Z",
+    "updatedAt": "2025-09-05T19:25:00Z"
+  },
+  {
+    "id": "uf007",
+    "follower_id": "f2479a67-51ae-4f0f-bed8-fb97fa4a0f60",
+    "following_id": "c00353b0-5a11-4b6d-a94e-64d547a26722",
+    "createdAt": "2025-09-05T19:30:00Z",
+    "updatedAt": "2025-09-05T19:30:00Z"
+  },
+  {
+    "id": "uf008",
+    "follower_id": "f2479a67-51ae-4f0f-bed8-fb97fa4a0f60",
+    "following_id": "13c754c5-8c75-4ecd-b0f0-349cfe532fec",
+    "createdAt": "2025-09-05T19:35:00Z",
+    "updatedAt": "2025-09-05T19:35:00Z"
+  },
+  {
+    "id": "uf009",
+    "follower_id": "8bba1b72-9a09-431e-a673-185c398509b8",
+    "following_id": "7a91bac5-0e44-4435-820c-d3e8ca268cc7",
+    "createdAt": "2025-09-05T19:40:00Z",
+    "updatedAt": "2025-09-05T19:40:00Z"
+  },
+  {
+    "id": "uf010",
+    "follower_id": "8bba1b72-9a09-431e-a673-185c398509b8",
+    "following_id": "tcolkett7@abc.net.au",
+    "createdAt": "2025-09-05T19:45:00Z",
+    "updatedAt": "2025-09-05T19:45:00Z"
+  },
+  {
+    "id": "uf011",
+    "follower_id": "0e9fd142-e4fd-4789-98d4-ae49405b814a",
+    "following_id": "4551ca35-61cd-4c23-8a73-3ca969415782",
+    "createdAt": "2025-09-05T19:50:00Z",
+    "updatedAt": "2025-09-05T19:50:00Z"
+  },
+  {
+    "id": "uf012",
+    "follower_id": "0e9fd142-e4fd-4789-98d4-ae49405b814a",
+    "following_id": "31d89d6e-95ab-4b97-bfdc-3d05748c1e5b",
+    "createdAt": "2025-09-05T19:55:00Z",
+    "updatedAt": "2025-09-05T19:55:00Z"
+  }
+]

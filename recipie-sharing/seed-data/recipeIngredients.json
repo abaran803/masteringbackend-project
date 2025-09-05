@@ -1,0 +1,231 @@
+[
+  {
+    "id": "7de81e44-1851-464c-a69f-1340f9d8a0f2",
+    "recipe_id": "9b2e9d3d-1a3c-4f14-bab3-77f0e3af6d21",
+    "ingredient_id": "fddf8ba1-44ae-42f2-908a-bc78ee731eea",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "845d2195-0b94-43bb-a0c3-55d54fd1e86f",
+    "recipe_id": "9b2e9d3d-1a3c-4f14-bab3-77f0e3af6d21",
+    "ingredient_id": "109a0bff-f4c8-4f29-bd85-49911f68f5de",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "6cfc9aef-1e8a-4e23-bc9e-5ab7a4e8d0a2",
+    "recipe_id": "9b2e9d3d-1a3c-4f14-bab3-77f0e3af6d21",
+    "ingredient_id": "47c639ec-6a83-4826-9876-c4c5f9476aa5",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "3c541d42-9d87-42ad-b9ee-7d85a373979e",
+    "recipe_id": "9b2e9d3d-1a3c-4f14-bab3-77f0e3af6d21",
+    "ingredient_id": "f2b43726-0d60-4b59-b6a3-9951cf1e6c70",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "82c42953-1ed3-4f66-a8e5-dae0ebee92cd",
+    "recipe_id": "9b2e9d3d-1a3c-4f14-bab3-77f0e3af6d21",
+    "ingredient_id": "0a90c1d8-32cc-4701-98a2-17ac390b3dbf",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+
+  {
+    "id": "fc6d7d0a-57d2-4bb6-8e82-9b9bb56ad7f1",
+    "recipe_id": "4fd7b8e8-44f5-4d53-9b43-93f67b6c5cb8",
+    "ingredient_id": "2a39d92e-02a4-42ab-8b43-2b47e5f17329",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "3d1de8b7-66c4-4b5c-86f4-15770ed09c8a",
+    "recipe_id": "4fd7b8e8-44f5-4d53-9b43-93f67b6c5cb8",
+    "ingredient_id": "39deac3d-1830-499d-86c0-d6ea8c1cbb68",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "f64c8198-c642-43f3-9183-573f9b6d3f79",
+    "recipe_id": "4fd7b8e8-44f5-4d53-9b43-93f67b6c5cb8",
+    "ingredient_id": "09fd5b30-04b1-47e2-99dc-0ed3e047a77e",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "24e4d63f-cd1f-4867-9ea4-8f73f82ff6d7",
+    "recipe_id": "4fd7b8e8-44f5-4d53-9b43-93f67b6c5cb8",
+    "ingredient_id": "41d72f14-7c3b-459f-87cc-4f9d899c171c",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "6079481e-9c52-4a3a-80ea-6d62f9b06e59",
+    "recipe_id": "4fd7b8e8-44f5-4d53-9b43-93f67b6c5cb8",
+    "ingredient_id": "d22fc565-fb02-4d6c-a5f7-0aeb5c8f3ea6",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+
+  {
+    "id": "92c5b8e4-6948-4cf3-a260-64c962efc91c",
+    "recipe_id": "7e2f3f21-6d91-4db6-a932-52f28d234fc1",
+    "ingredient_id": "0216c9b9-e6f7-43e0-8894-d0591c19c2df",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "eb91c3b1-908f-4e4f-9205-0802b3d93dc1",
+    "recipe_id": "7e2f3f21-6d91-4db6-a932-52f28d234fc1",
+    "ingredient_id": "84b64a8e-6270-4e92-a228-6b14de22182b",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "f0197c69-79ac-4e5c-a758-465a33226c47",
+    "recipe_id": "7e2f3f21-6d91-4db6-a932-52f28d234fc1",
+    "ingredient_id": "693c9363-bf10-45d2-bf91-e01e2aa539b2",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "35a4e9ad-775f-46b8-aaf6-29dbfef0fdd6",
+    "recipe_id": "7e2f3f21-6d91-4db6-a932-52f28d234fc1",
+    "ingredient_id": "aa7a1b0c-25d3-4da4-9d03-b1dc636bd52e",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "7efbe74b-27e2-4f6e-8d4b-35a88e6e5cf0",
+    "recipe_id": "7e2f3f21-6d91-4db6-a932-52f28d234fc1",
+    "ingredient_id": "3d91f14a-3ddc-4951-9a2b-92ee8a52a0a0",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "af1e9c12-cc0b-44c7-b6c8-58c5b7083483",
+    "recipe_id": "7e2f3f21-6d91-4db6-a932-52f28d234fc1",
+    "ingredient_id": "dad4c9df-55f2-4407-8e8b-dc087f48f7e6",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+
+  {
+    "id": "ed73f464-6f5d-40d5-a6f6-4b6e9850f6c0",
+    "recipe_id": "fae3d1c9-4235-4c93-a3c7-3f5d99b74ac3",
+    "ingredient_id": "8bbbd097-e098-43ad-b58f-c6a719e7c71d",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "79fd9786-5acb-4de8-8d7b-26299e78963d",
+    "recipe_id": "fae3d1c9-4235-4c93-a3c7-3f5d99b74ac3",
+    "ingredient_id": "2a5bb55a-640a-4b70-8070-6d1a143f04a5",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "10a9e105-1de0-4be5-ae6e-858c1c5e2db9",
+    "recipe_id": "fae3d1c9-4235-4c93-a3c7-3f5d99b74ac3",
+    "ingredient_id": "c591fc46-41f1-4d16-b2ee-9a12d74ab2c9",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "35f16bb6-046f-4f13-9f1e-07c12b7a4a44",
+    "recipe_id": "fae3d1c9-4235-4c93-a3c7-3f5d99b74ac3",
+    "ingredient_id": "463b4153-76a4-43a2-98c1-c7e4e9a6602d",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "9d9f5ec0-fae0-4930-a243-33a1bcb51036",
+    "recipe_id": "fae3d1c9-4235-4c93-a3c7-3f5d99b74ac3",
+    "ingredient_id": "543ce539-382f-45c2-9a40-42011ff7eb4c",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "5160a823-5d2e-49f5-8e90-73232e5abf48",
+    "recipe_id": "fae3d1c9-4235-4c93-a3c7-3f5d99b74ac3",
+    "ingredient_id": "3560cb2e-f0f0-4c2d-9ed4-50a1b28b1ff5",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+
+  {
+    "id": "a2c46b64-0c4b-422a-a24a-2c79d14e82e2",
+    "recipe_id": "d1f7cb42-3d95-42b7-9c0f-25b9b9ad182f",
+    "ingredient_id": "dfffdcf6-80d5-44c5-b404-7c9dd5c4e8b1",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "0404d04d-fb4e-4532-81f2-b7ed637d0b71",
+    "recipe_id": "d1f7cb42-3d95-42b7-9c0f-25b9b9ad182f",
+    "ingredient_id": "8d3c4e65-3262-4e7d-813c-c6ac88e62f7c",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "3495a2a5-d5ad-4ef6-bf19-b6938ac20dd6",
+    "recipe_id": "d1f7cb42-3d95-42b7-9c0f-25b9b9ad182f",
+    "ingredient_id": "41ffab87-fb88-4b73-bcd1-6da9a6a172fc",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "2c6b6c0a-1f22-40db-b7f1-32a6a66a3f8e",
+    "recipe_id": "d1f7cb42-3d95-42b7-9c0f-25b9b9ad182f",
+    "ingredient_id": "c26d4e7e-1603-4cb7-a4aa-c75f152017f4",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "97f4c232-85a9-44a9-a833-27879d6cb2b0",
+    "recipe_id": "d1f7cb42-3d95-42b7-9c0f-25b9b9ad182f",
+    "ingredient_id": "29c0ff98-3a7c-4709-915c-80c41e03c79d",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+
+  {
+    "id": "a3585f80-0e20-45ff-9d8f-dc1124d2eeb7",
+    "recipe_id": "31f3f92e-5b11-47f8-9b2f-22f7c8b74aa4",
+    "ingredient_id": "20c17927-8d4a-4c94-97b6-85d8014c87c6",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "b66c2a4d-4a09-48e0-a11a-20c7f9798d9d",
+    "recipe_id": "31f3f92e-5b11-47f8-9b2f-22f7c8b74aa4",
+    "ingredient_id": "792f8f5f-1a93-4475-84f5-bba70d435d38",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "e775d8c9-2608-4458-b7b4-f94f07de2a6b",
+    "recipe_id": "31f3f92e-5b11-47f8-9b2f-22f7c8b74aa4",
+    "ingredient_id": "f62122b7-9fbb-4d6b-80cd-e84f170a42da",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "34289fc1-9abf-4015-b465-d25d4b442a4d",
+    "recipe_id": "31f3f92e-5b11-47f8-9b2f-22f7c8b74aa4",
+    "ingredient_id": "ac3acb65-cddf-42e5-a69a-66328c221bc1",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  },
+  {
+    "id": "d33bcb2f-3ed8-4676-b94e-607b3b1ff708",
+    "recipe_id": "31f3f92e-5b11-47f8-9b2f-22f7c8b74aa4",
+    "ingredient_id": "43c8ee7c-35a6-49a8-9134-301c4279a930",
+    "createdAt": "2025-09-05T12:00:00Z",
+    "updatedAt": "2025-09-05T12:00:00Z"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "t001",
+    "name": "Spicy",
+    "createdAt": "2025-09-05T20:00:00Z",
+    "updatedAt": "2025-09-05T20:00:00Z"
+  },
+  {
+    "id": "t002",
+    "name": "Quick",
+    "createdAt": "2025-09-05T20:01:00Z",
+    "updatedAt": "2025-09-05T20:01:00Z"
+  },
+  {
+    "id": "t003",
+    "name": "Low-Carb",
+    "createdAt": "2025-09-05T20:02:00Z",
+    "updatedAt": "2025-09-05T20:02:00Z"
+  },
+  {
+    "id": "t004",
+    "name": "Comfort Food",
+    "createdAt": "2025-09-05T20:03:00Z",
+    "updatedAt": "2025-09-05T20:03:00Z"
+  },
+  {
+    "id": "t005",
+    "name": "Vegan",
+    "createdAt": "2025-09-05T20:04:00Z",
+    "updatedAt": "2025-09-05T20:04:00Z"
+  },
+  {
+    "id": "t006",
+    "name": "Gluten-Free",
+    "createdAt": "2025-09-05T20:05:00Z",
+    "updatedAt": "2025-09-05T20:05:00Z"
+  },
+  {
+    "id": "t007",
+    "name": "Dessert",
+    "createdAt": "2025-09-05T20:06:00Z",
+    "updatedAt": "2025-09-05T20:06:00Z"
+  },
+  {
+    "id": "t008",
+    "name": "Healthy",
+    "createdAt": "2025-09-05T20:07:00Z",
+    "updatedAt": "2025-09-05T20:07:00Z"
+  }
+]
