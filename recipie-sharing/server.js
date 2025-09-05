@@ -2,7 +2,7 @@ require("dotenv").config();
 
 const http = require("http");
 const app = require("./app");
-const db = require("./model");
+const db = require("./models");
 
 db.sequelize.sync();
 

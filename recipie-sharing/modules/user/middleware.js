@@ -1,4 +1,4 @@
-const db = require("../../model/index.js");
+const db = require("../../models/index.js");
 const User = db.users;
 
 verifySignUp = async (req, res, next) => {

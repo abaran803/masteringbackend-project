@@ -1,4 +1,4 @@
-const db = require("../../model");
+const db = require("../../models");
 
 const Tag = db.tags;
 

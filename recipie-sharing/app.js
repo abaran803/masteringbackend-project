@@ -12,7 +12,7 @@ const swaggerUi = require("swagger-ui-express");
 const swaggerDocument = require("./swagger.json");
 const error = require("./middleware/error");
 const verifyToken = require("./middleware/auth");
-require("./model/index");
+require("./models/index");
 
 const app = express();
 

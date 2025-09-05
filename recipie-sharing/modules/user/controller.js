@@ -1,4 +1,4 @@
-const db = require("../../model");
+const db = require("../../models");
 var jwt = require("jsonwebtoken");
 var bcrypt = require("bcrypt");
 

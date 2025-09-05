@@ -1,5 +1,5 @@
 const { Op } = require("sequelize");
-const db = require("../../model");
+const db = require("../../models");
 
 const Recipe = db.recipies;
 const User = db.users;
