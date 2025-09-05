@@ -1,48 +1,48 @@
 [
   {
-    "id": "t001",
+    "id": "9d73b683-c25f-42e4-b3d4-18da7d0880cc",
     "name": "Spicy",
     "createdAt": "2025-09-05T20:00:00Z",
     "updatedAt": "2025-09-05T20:00:00Z"
   },
   {
-    "id": "t002",
+    "id": "399183be-6601-45b4-a9b3-aadbb5f28736",
     "name": "Quick",
     "createdAt": "2025-09-05T20:01:00Z",
     "updatedAt": "2025-09-05T20:01:00Z"
   },
   {
-    "id": "t003",
+    "id": "21f2e5a3-2710-494c-b2b2-c3112ac9fe72",
     "name": "Low-Carb",
     "createdAt": "2025-09-05T20:02:00Z",
     "updatedAt": "2025-09-05T20:02:00Z"
   },
   {
-    "id": "t004",
+    "id": "80f333a5-08e1-4005-812e-7aa026078908",
     "name": "Comfort Food",
     "createdAt": "2025-09-05T20:03:00Z",
     "updatedAt": "2025-09-05T20:03:00Z"
   },
   {
-    "id": "t005",
+    "id": "e57a8231-9d5e-4711-81e0-5bd844d12a16",
     "name": "Vegan",
     "createdAt": "2025-09-05T20:04:00Z",
     "updatedAt": "2025-09-05T20:04:00Z"
   },
   {
-    "id": "t006",
+    "id": "6becb318-5e97-44a3-aaed-7e3ccd104d28",
     "name": "Gluten-Free",
     "createdAt": "2025-09-05T20:05:00Z",
     "updatedAt": "2025-09-05T20:05:00Z"
   },
   {
-    "id": "t007",
+    "id": "a01e3401-fcae-483c-ae67-dacbb3f0e4c3",
     "name": "Dessert",
     "createdAt": "2025-09-05T20:06:00Z",
     "updatedAt": "2025-09-05T20:06:00Z"
   },
   {
-    "id": "t008",
+    "id": "d33aa338-7dd0-4ad0-976f-76a0d9a0b812",
     "name": "Healthy",
     "createdAt": "2025-09-05T20:07:00Z",
     "updatedAt": "2025-09-05T20:07:00Z"
