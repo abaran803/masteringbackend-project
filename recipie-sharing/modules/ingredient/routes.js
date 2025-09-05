@@ -5,7 +5,7 @@ const {
   getIngredientById,
   updateIngredient,
   deleteIngredient,
-} = require("./controller");
+} = require("./controllers");
 const router = express.Router();
 
 router.post("/", createIngredient);

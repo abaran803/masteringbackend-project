@@ -7,7 +7,7 @@ const {
   follow,
   followers,
   followings,
-} = require("./controller");
+} = require("./controllers");
 const verifyToken = require("../../middleware/auth");
 
 router.use(function (req, res, next) {
