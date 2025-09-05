@@ -64,21 +64,21 @@
   },
   {
     "id": "35a687d1-5a41-4599-8fd3-da53c4ef95b4",
-    "recipe_id": "f6a7b8c9-0d1e-42f3-c4b5-3f4c5d6e7f8a",
+    "recipe_id": "a9c201cb-4e65-4d2a-960c-9324171886cf",
     "tag_id": "21f2e5a3-2710-494c-b2b2-c3112ac9fe72",
     "createdAt": "2025-09-05T20:19:00Z",
     "updatedAt": "2025-09-05T20:19:00Z"
   },
   {
     "id": "5d008034-7aa0-4c8d-8d62-717773fa23d3",
-    "recipe_id": "a7b8c9d0-1e2f-43a4-d5b6-4f5d6e7f8a9b",
+    "recipe_id": "21e84c96-654e-4b6c-a6b4-00fd1d61b4c3",
     "tag_id": "a01e3401-fcae-483c-ae67-dacbb3f0e4c3",
     "createdAt": "2025-09-05T20:20:00Z",
     "updatedAt": "2025-09-05T20:20:00Z"
   },
   {
     "id": "ca46a8b6-507d-476b-8435-56d9bfe39336",
-    "recipe_id": "a7b8c9d0-1e2f-43a4-d5b6-4f5d6e7f8a9b",
+    "recipe_id": "21e84c96-654e-4b6c-a6b4-00fd1d61b4c3",
     "tag_id": "399183be-6601-45b4-a9b3-aadbb5f28736",
     "createdAt": "2025-09-05T20:21:00Z",
     "updatedAt": "2025-09-05T20:21:00Z"

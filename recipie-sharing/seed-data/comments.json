@@ -82,40 +82,40 @@
   {
     "id": "ee992434-00e8-4bf4-bc0e-36f494ff5856",
     "comment": "Will definitely make again!",
-    "user_id": "ede8@cnet.com",
-    "recipe_id": "f6a7b8c9-0d1e-42f3-c4b5-3f4c5d6e7f8a",
+    "user_id": "13c754c5-8c75-4ecd-b0f0-349cfe532fec",
+    "recipe_id": "a9c201cb-4e65-4d2a-960c-9324171886cf",
     "createdAt": "2025-09-05T15:40:00Z",
     "updatedAt": "2025-09-05T15:40:00Z"
   },
   {
     "id": "52cdf155-eac9-498b-9b46-1f2ead6e89b4",
     "comment": "Excellent recipe, simple and tasty!",
-    "user_id": "iwithers3@istockphoto.com",
-    "recipe_id": "f6a7b8c9-0d1e-42f3-c4b5-3f4c5d6e7f8a",
+    "user_id": "f2479a67-51ae-4f0f-bed8-fb97fa4a0f60",
+    "recipe_id": "a9c201cb-4e65-4d2a-960c-9324171886cf",
     "createdAt": "2025-09-05T15:50:00Z",
     "updatedAt": "2025-09-05T15:50:00Z"
   },
   {
     "id": "70e15533-513a-425c-bfde-0e941d81d973",
     "comment": "Perfect for breakfast!",
-    "user_id": "asigward9@ucoz.com",
-    "recipe_id": "e1f2a3b4-5c6d-47e8-h9i0-8h9i0a1b2c3d",
+    "user_id": "7a91bac5-0e44-4435-820c-d3e8ca268cc7",
+    "recipe_id": "bec2481d-9c59-4bc6-96c2-88cbdc06f0e1",
     "createdAt": "2025-09-05T16:00:00Z",
     "updatedAt": "2025-09-05T16:00:00Z"
   },
   {
     "id": "c1fcf18d-844d-4942-ad96-0def7afe7e1a",
     "comment": "Very easy to follow, tasted amazing!",
-    "user_id": "tcolkett7@abc.net.au",
-    "recipe_id": "e1f2a3b4-5c6d-47e8-h9i0-8h9i0a1b2c3d",
+    "user_id": "c00353b0-5a11-4b6d-a94e-64d547a26722",
+    "recipe_id": "bec2481d-9c59-4bc6-96c2-88cbdc06f0e1",
     "createdAt": "2025-09-05T16:10:00Z",
     "updatedAt": "2025-09-05T16:10:00Z"
   },
   {
     "id": "801e6cf3-db96-497a-8938-fd9e6a21b88b",
     "comment": "Loved it! Will cook again this weekend.",
-    "user_id": "ctampin5@mit.edu",
-    "recipe_id": "a7b8c9d0-1e2f-43a4-d5b6-4f5d6e7f8a9b",
+    "user_id": "0e9fd142-e4fd-4789-98d4-ae49405b814a",
+    "recipe_id": "21e84c96-654e-4b6c-a6b4-00fd1d61b4c3",
     "createdAt": "2025-09-05T16:20:00Z",
     "updatedAt": "2025-09-05T16:20:00Z"
   }

@@ -36,21 +36,21 @@
   },
   {
     "id": "cbdee4c4-4450-4c8f-8844-294e4aad47bb",
-    "recipe_id": "f6a7b8c9-0d1e-42f3-c4b5-3f4c5d6e7f8a",
+    "recipe_id": "a9c201cb-4e65-4d2a-960c-9324171886cf",
     "user_id": "75d300f6-0310-4ec2-a0ba-3a1f518e297e",
     "createdAt": "2025-09-05T17:50:00Z",
     "updatedAt": "2025-09-05T17:50:00Z"
   },
   {
     "id": "61d49ef0-115f-4d7c-a133-429280d72b51",
-    "recipe_id": "a7b8c9d0-1e2f-43a4-d5b6-4f5d6e7f8a9b",
+    "recipe_id": "21e84c96-654e-4b6c-a6b4-00fd1d61b4c3",
     "user_id": "f2479a67-51ae-4f0f-bed8-fb97fa4a0f60",
     "createdAt": "2025-09-05T18:00:00Z",
     "updatedAt": "2025-09-05T18:00:00Z"
   },
   {
     "id": "f9cf6156-30da-4a22-890d-beadfe74ea2e",
-    "recipe_id": "e1f2a3b4-5c6d-47e8-h9i0-8h9i0a1b2c3d",
+    "recipe_id": "bec2481d-9c59-4bc6-96c2-88cbdc06f0e1",
     "user_id": "f2479a67-51ae-4f0f-bed8-fb97fa4a0f60",
     "createdAt": "2025-09-05T18:10:00Z",
     "updatedAt": "2025-09-05T18:10:00Z"
@@ -78,7 +78,7 @@
   },
   {
     "id": "6f817583-381a-4b34-97e5-f052351a3853",
-    "recipe_id": "f6a7b8c9-0d1e-42f3-c4b5-3f4c5d6e7f8a",
+    "recipe_id": "a9c201cb-4e65-4d2a-960c-9324171886cf",
     "user_id": "0e9fd142-e4fd-4789-98d4-ae49405b814a",
     "createdAt": "2025-09-05T18:50:00Z",
     "updatedAt": "2025-09-05T18:50:00Z"
