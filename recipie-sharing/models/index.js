@@ -165,6 +165,25 @@ db.recipes.belongsToMany(db.users, {
   otherKey: "user_id",
 });
 
+db.comments.belongsTo(db.users, { foreignKey: "user_id", as: "userCommented" });
+db.comments.belongsTo(db.recipes, {
+  foreignKey: "recipe_id",
+  as: "recipeComment",
+});
+db.recipes.hasMany(db.comments, { foreignKey: "recipe_id", as: "comments" });
+db.users.hasMany(db.comments, { foreignKey: "user_id", as: "comments" });
+
+db.ratings.belongsTo(db.users, {
+  foreignKey: "user_id",
+  as: "userRatingRecipe",
+});
+db.ratings.belongsTo(db.recipes, {
+  foreignKey: "recipe_id",
+  as: "recipeRatedBy",
+});
+db.recipes.hasMany(db.ratings, { foreignKey: "recipe_id", as: "ratings" });
+db.users.hasMany(db.ratings, { foreignKey: "user_id", as: "ratings" });
+
 db.comments.afterCreate(
   "commentHookAfterCreate",
   async (commentData, _options) => {

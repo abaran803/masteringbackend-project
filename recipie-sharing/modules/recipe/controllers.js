@@ -9,9 +9,8 @@ const Tag = db.tags;
 const createRecipe = async (req, res, next) => {
   const t = await db.sequelize.transaction();
   try {
-    const { title, instruction, created_by, ingredients, tags, categories } =
-      req.body;
-    if (!title || !created_by || !categories) {
+    const { title, instruction, ingredients, tags, categories } = req.body;
+    if (!title || !categories) {
       await t.rollback();
       return res.status(400).send({
         message: "Title, categories and created by is required",
@@ -35,7 +34,7 @@ const createRecipe = async (req, res, next) => {
         title,
         instruction,
         photos: req.uploadedUrls,
-        created_by,
+        created_by: req.user_id,
       },
       { transaction: t }
     );
@@ -94,6 +93,15 @@ const getAllRecipe = async (req, res, next) => {
           },
           required: false,
         },
+        {
+          model: db.users,
+          as: "FavouritedBy",
+          attributes: ["username", "email"],
+          through: {
+            attributes: [],
+          },
+          required: false,
+        },
       ],
       attributes: { exclude: "created_by" },
     });
@@ -136,6 +144,45 @@ const getRecipeById = async (req, res, next) => {
             attributes: [],
           },
         },
+        {
+          model: db.users,
+          attributes: ["username", "email"],
+          as: "FavouritedBy",
+          through: {
+            attributes: [],
+          },
+        },
+        {
+          model: db.ratings,
+          as: "ratings",
+          attributes: ["rating"],
+          include: [
+            {
+              model: db.users,
+              as: "userRatingRecipe",
+              attributes: ["id", "username", "email"],
+            },
+          ],
+        },
+        {
+          model: db.comments,
+          as: "comments",
+          attributes: ["comment"],
+          include: [
+            {
+              model: User,
+              as: "userCommented",
+              attributes: ["username", "email"],
+            },
+          ],
+        },
+        {
+          model: db.categories,
+          attributes: ["name", "type"],
+          through: {
+            attributes: [],
+          },
+        },
       ],
       attributes: { exclude: "created_by" },
     });
@@ -143,6 +190,7 @@ const getRecipeById = async (req, res, next) => {
     transformed = {
       ...recipe,
       ingredients: recipe.ingredients.map((i) => i.name),
+      tags: recipe.tags.map((i) => i.name),
     };
     res.status(200).send({
       message: "Fetched recipie suuccessfully",
@@ -215,7 +263,6 @@ const markFavourite = async (req, res, next) => {
 const addComment = async (req, res, next) => {
   try {
     const { id: recipeId } = req.params;
-    console.log(req.user_id);
     const { comment } = req.body;
     if (!recipeId) {
       return res.status(400).send({
