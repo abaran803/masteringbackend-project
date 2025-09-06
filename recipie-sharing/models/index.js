@@ -1,5 +1,14 @@
 const { Sequelize, DataTypes } = require("sequelize");
 const sendNotification = require("../helper/sendNotification");
+const fs = require("fs");
+const path = require("path");
+
+const logStream = fs.createWriteStream(
+  path.join(__dirname, "..", "logFiles", "./dbQuery.log"),
+  {
+    flags: "a",
+  }
+);
 
 const sequelize = new Sequelize(
   process.env.DB_DATABASE,
@@ -8,6 +17,7 @@ const sequelize = new Sequelize(
   {
     host: process.env.DB_HOST,
     dialect: "postgres",
+    logging: (log) => logStream.write(log + "\n"),
   }
 );
 

@@ -12,6 +12,9 @@ const swaggerUi = require("swagger-ui-express");
 const swaggerDocument = require("./swagger.json");
 const error = require("./middleware/error");
 const verifyToken = require("./middleware/auth");
+const morgan = require("morgan");
+const fs = require("fs");
+const path = require("path");
 require("./models/index");
 
 const app = express();
@@ -19,6 +22,12 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
+
+const accessLogStream = fs.createWriteStream(
+  path.join(__dirname, "logFiles", "requests.log"),
+  { flags: "a" }
+);
+app.use(morgan("combined", { stream: accessLogStream }));
 
 app.use("/api/users", authRoutes);
 app.use("/api/ingredients", verifyToken, ingredientRoutes);
