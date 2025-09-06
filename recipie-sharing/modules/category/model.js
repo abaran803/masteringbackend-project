@@ -23,7 +23,7 @@ const category = (sequelize, DataTypes) => {
 };
 
 const recipeCategory = (sequelize, DataTypes) => {
-  const Follow = sequelize.define(
+  const RecipeCategory = sequelize.define(
     "recipe_category",
     {
       id: {
@@ -43,7 +43,7 @@ const recipeCategory = (sequelize, DataTypes) => {
     { timestamps: true }
   );
 
-  return Follow;
+  return RecipeCategory;
 };
 
 module.exports = { category, recipeCategory };
