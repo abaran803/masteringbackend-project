@@ -3,12 +3,16 @@ const sendNotification = require("../helper/sendNotification");
 const fs = require("fs");
 const path = require("path");
 
-const logStream = fs.createWriteStream(
-  path.join(__dirname, "..", "logFiles", "./dbQuery.log"),
-  {
-    flags: "a",
-  }
-);
+const logDir = path.join(__dirname, "..", "logFiles");
+const logFile = path.join(logDir, "dbQuery.log");
+
+if (!fs.existsSync(logDir)) {
+  fs.mkdirSync(logDir, { recursive: true });
+}
+
+const logStream = fs.createWriteStream(logFile, {
+  flags: "a",
+});
 
 const sequelize = new Sequelize(
   process.env.DB_DATABASE,

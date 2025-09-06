@@ -23,11 +23,18 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-const accessLogStream = fs.createWriteStream(
-  path.join(__dirname, "logFiles", "requests.log"),
-  { flags: "a" }
-);
-app.use(morgan("combined", { stream: accessLogStream }));
+const reqDir = path.join(__dirname, "logFiles");
+const reqFile = path.join(reqDir, "requests.log");
+
+if (!fs.existsSync(reqDir)) {
+  fs.mkdirSync(reqDir, { recursive: true });
+}
+
+const reqStream = fs.createWriteStream(reqFile, {
+  flags: "a",
+});
+
+app.use(morgan("combined", { stream: reqStream }));
 
 app.get("/", (req, res) => {
   res.status(200).send({ message: "OK" });
