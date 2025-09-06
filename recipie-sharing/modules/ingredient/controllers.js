@@ -44,11 +44,7 @@ const getAllIngredients = async (req, res, next) => {
 const getIngredientById = async (req, res, next) => {
   try {
     const { id } = req.params;
-    const ingredient = await Ingredients.findOne({
-      where: {
-        id,
-      },
-    });
+    const ingredient = await Ingredients.findByPk(id);
     res.status(200).send({
       message: "Fetched ingredient successfully",
       data: ingredient,

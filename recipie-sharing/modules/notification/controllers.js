@@ -38,11 +38,7 @@ const getAllNotification = async (req, res, next) => {
 const getNotificationById = async (req, res, next) => {
   try {
     const { id } = req.params;
-    let notification = await Notification.findOne({
-      where: {
-        id,
-      },
-    });
+    let notification = await Notification.findByPk(id);
     res.status(200).send({
       message: "Fetched notification successfully",
       data: notification,

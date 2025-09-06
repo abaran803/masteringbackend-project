@@ -45,11 +45,7 @@ const getAllCategory = async (req, res, next) => {
 const getCategoryById = async (req, res, next) => {
   try {
     const { id } = req.params;
-    let category = await Category.findOne({
-      where: {
-        id,
-      },
-    });
+    let category = await Category.findByPk(id)
     res.status(200).send({
       message: "Fetched category successfully",
       data: category,

@@ -44,11 +44,7 @@ const getAllTag = async (req, res, next) => {
 const getTagById = async (req, res, next) => {
   try {
     const { id } = req.params;
-    const tag = await Tag.findOne({
-      where: {
-        id,
-      },
-    });
+    const tag = await Tag.findByPk(id);
     res.status(200).send({
       message: "Fetched tag successfully",
       data: tag,

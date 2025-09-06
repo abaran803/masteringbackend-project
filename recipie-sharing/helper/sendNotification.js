@@ -1,7 +1,6 @@
 module.exports = async (recipeId, userId, db, action, operation) => {
   const type = "info";
-  const recipe = await db.recipes.findOne({
-    where: { id: recipeId },
+  const recipe = await db.recipes.findByPk(recipeId, {
     include: [
       {
         model: db.users,
@@ -10,7 +9,7 @@ module.exports = async (recipeId, userId, db, action, operation) => {
       { model: db.users, as: "creater" },
     ],
   });
-  const commenter = await db.users.findOne({ where: { id: userId } });
+  const commenter = await db.users.findByPk(userId);
   const { creater, FavouritedBy, title } = recipe;
   FavouritedBy.forEach((fav) => {
     db.notifications.create({

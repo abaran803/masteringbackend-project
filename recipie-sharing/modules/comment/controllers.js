@@ -50,11 +50,7 @@ const getAllComment = async (req, res, next) => {
 const getCommentById = async (req, res, next) => {
   try {
     const { id } = req.params;
-    let comment = await Comment.findOne({
-      where: {
-        id,
-      },
-    });
+    let comment = await Comment.findByPk(id);
     res.status(200).send({
       message: "Fetched comment successfully",
       data: comment,

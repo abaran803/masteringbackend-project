@@ -115,10 +115,7 @@ const getAllRecipe = async (req, res, next) => {
 const getRecipeById = async (req, res, next) => {
   try {
     const { id } = req.params;
-    let recipe = await Recipe.findOne({
-      where: {
-        id,
-      },
+    let recipe = await Recipe.findByPk(id, {
       include: [
         {
           model: db.users,

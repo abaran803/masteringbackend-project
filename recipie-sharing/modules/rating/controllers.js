@@ -50,11 +50,7 @@ const getAllRating = async (req, res, next) => {
 const getRatingById = async (req, res, next) => {
   try {
     const { id } = req.params;
-    let rating = await Rating.findOne({
-      where: {
-        id,
-      },
-    });
+    let rating = await Rating.findByPk(id);
     res.status(200).send({
       message: "Fetched rating successfully",
       data: rating,
