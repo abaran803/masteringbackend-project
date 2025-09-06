@@ -34,7 +34,7 @@ db.favouriteRecipe = require("../modules/user/model").favouriteRecipe(
   DataTypes
 );
 db.ingredients = require("../modules/ingredient/model")(sequelize, DataTypes);
-db.recipies = require("../modules/recipe/model").recipe(sequelize, DataTypes);
+db.recipes = require("../modules/recipe/model").recipe(sequelize, DataTypes);
 db.recipeIngredients = require("../modules/recipe/model").recipeIngredient(
   sequelize,
   DataTypes
@@ -57,16 +57,16 @@ db.notifications = require("../modules/notification/model")(
   DataTypes
 );
 
-db.users.hasMany(db.recipies, { as: "creater", foreignKey: "created_by" });
-db.recipies.belongsTo(db.users, { foreignKey: "created_by", as: "creater" });
+db.users.hasMany(db.recipes, { foreignKey: "created_by", as: "creater" });
+db.recipes.belongsTo(db.users, { foreignKey: "created_by", as: "creater" });
 
-db.recipies.belongsToMany(db.ingredients, {
+db.recipes.belongsToMany(db.ingredients, {
   through: db.recipeIngredients,
   foreignKey: "recipe_id",
   otherKey: "ingredient_id",
 });
 
-db.ingredients.belongsToMany(db.recipies, {
+db.ingredients.belongsToMany(db.recipes, {
   through: db.recipeIngredients,
   foreignKey: "ingredient_id",
   otherKey: "recipe_id",
@@ -86,52 +86,52 @@ db.users.belongsToMany(db.users, {
   otherKey: "following_id",
 });
 
-db.recipies.belongsToMany(db.tags, {
+db.recipes.belongsToMany(db.tags, {
   through: db.recipeTags,
   foreignKey: "recipe_id",
   otherKey: "tag_id",
 });
 
-db.tags.belongsToMany(db.recipies, {
+db.tags.belongsToMany(db.recipes, {
   through: db.recipeTags,
   foreignKey: "tag_id",
   otherKey: "recipe_id",
 });
 
-db.recipies.belongsToMany(db.categories, {
+db.recipes.belongsToMany(db.categories, {
   through: db.recipeCategories,
   foreignKey: "recipe_id",
   otherKey: "category_id",
 });
 
-db.categories.belongsToMany(db.recipies, {
+db.categories.belongsToMany(db.recipes, {
   through: db.recipeCategories,
   foreignKey: "category_id",
   otherKey: "recipe_id",
 });
 
-db.recipies.belongsToMany(db.users, {
+db.recipes.belongsToMany(db.users, {
   through: { model: db.comments, unique: false },
   as: "CommentedBy",
   foreignKey: "recipe_id",
   otherKey: "user_id",
 });
 
-db.users.belongsToMany(db.recipies, {
+db.users.belongsToMany(db.recipes, {
   through: { model: db.comments, unique: false },
   as: "CommentedRecipe",
   foreignKey: "user_id",
   otherKey: "recipe_id",
 });
 
-db.recipies.belongsToMany(db.users, {
+db.recipes.belongsToMany(db.users, {
   through: db.ratings,
   as: "RatedBy",
   foreignKey: "recipe_id",
   otherKey: "user_id",
 });
 
-db.users.belongsToMany(db.recipies, {
+db.users.belongsToMany(db.recipes, {
   through: db.ratings,
   as: "RatedRacipe",
   foreignKey: "user_id",
@@ -141,14 +141,14 @@ db.users.belongsToMany(db.recipies, {
 db.users.hasMany(db.notifications, { foreignKey: "user_id" });
 db.notifications.belongsTo(db.users, { foreignKey: "user_id" });
 
-db.users.belongsToMany(db.recipies, {
+db.users.belongsToMany(db.recipes, {
   through: db.favouriteRecipe,
   as: "FavouriteRecipes",
   foreignKey: "user_id",
   otherKey: "recipe_id",
 });
 
-db.recipies.belongsToMany(db.users, {
+db.recipes.belongsToMany(db.users, {
   through: db.favouriteRecipe,
   as: "FavouritedBy",
   foreignKey: "recipe_id",
@@ -179,7 +179,7 @@ db.ratings.afterUpdate(
   }
 );
 
-db.recipies.afterUpdate(
+db.recipes.afterUpdate(
   "recipeHookAfterUpdate",
   async (recipeData, _options) => {
     const { id: recipeId, created_by: userId } = recipeData.toJSON();

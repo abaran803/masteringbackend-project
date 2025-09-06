@@ -1,6 +1,6 @@
 module.exports = async (recipeId, userId, db, action, operation) => {
   const type = "info";
-  const recipe = await db.recipies.findOne({
+  const recipe = await db.recipes.findOne({
     where: { id: recipeId },
     include: [
       {

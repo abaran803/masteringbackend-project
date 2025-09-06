@@ -302,7 +302,7 @@
         }
       }
     },
-    "/api/recipies/": {
+    "/api/recipes/": {
       "post": {
         "description": "",
         "parameters": [
@@ -374,7 +374,7 @@
         }
       }
     },
-    "/api/recipies/{id}": {
+    "/api/recipes/{id}": {
       "get": {
         "description": "",
         "parameters": [
@@ -442,7 +442,7 @@
         }
       }
     },
-    "/api/recipies/mark-favourite/{id}": {
+    "/api/recipes/mark-favourite/{id}": {
       "post": {
         "description": "",
         "parameters": [
@@ -469,7 +469,7 @@
         }
       }
     },
-    "/api/recipies/add-comment/{id}": {
+    "/api/recipes/add-comment/{id}": {
       "post": {
         "description": "",
         "parameters": [
@@ -508,7 +508,7 @@
         }
       }
     },
-    "/api/recipies/add-rating/{id}": {
+    "/api/recipes/add-rating/{id}": {
       "post": {
         "description": "",
         "parameters": [
@@ -547,7 +547,7 @@
         }
       }
     },
-    "/api/recipies/add-tag/{id}": {
+    "/api/recipes/add-tag/{id}": {
       "post": {
         "description": "",
         "parameters": [
@@ -586,7 +586,7 @@
         }
       }
     },
-    "/api/recipies/add-tag/{id}/{tag_id}": {
+    "/api/recipes/add-tag/{id}/{tag_id}": {
       "post": {
         "description": "",
         "parameters": [
@@ -631,7 +631,7 @@
         }
       }
     },
-    "/api/recipies/add-categories/{id}": {
+    "/api/recipes/add-categories/{id}": {
       "post": {
         "description": "",
         "parameters": [

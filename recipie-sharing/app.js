@@ -22,7 +22,7 @@ app.use(cors());
 
 app.use("/api/users", authRoutes);
 app.use("/api/ingredients", verifyToken, ingredientRoutes);
-app.use("/api/recipies", verifyToken, recipeRoutes);
+app.use("/api/recipes", verifyToken, recipeRoutes);
 app.use("/api/tags", verifyToken, tagRoutes);
 app.use("/api/categories", verifyToken, categoryRoutes);
 app.use("/api/comments", verifyToken, commentRoutes);

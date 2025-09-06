@@ -1,7 +1,7 @@
 const { Op } = require("sequelize");
 const db = require("../../models");
 
-const Recipe = db.recipies;
+const Recipe = db.recipes;
 const User = db.users;
 const Ratings = db.ratings;
 const Tag = db.tags;
@@ -61,7 +61,7 @@ const createRecipe = async (req, res, next) => {
 const getAllRecipe = async (req, res, next) => {
   try {
     const { search = "" } = req.query;
-    const recipies = await Recipe.findAll({
+    const recipes = await Recipe.findAll({
       where: {
         [Op.or]: [
           { title: { [Op.iLike]: `%${search}%` } },
@@ -97,14 +97,14 @@ const getAllRecipe = async (req, res, next) => {
       ],
       attributes: { exclude: "created_by" },
     });
-    const transformed = recipies.map((r) => {
+    const transformed = recipes.map((r) => {
       const recipe = r.toJSON();
       recipe.ingredients = recipe.ingredients.map((i) => i.name);
       recipe.tags = recipe.tags.map((i) => i.name);
       return recipe;
     });
     res.status(200).send({
-      message: "Fetched recipies suuccessfully",
+      message: "Fetched recipes suuccessfully",
       data: transformed,
     });
   } catch (err) {

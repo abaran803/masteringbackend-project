@@ -6,7 +6,7 @@ const path = require("path");
 module.exports = {
   async up(queryInterface, Sequelize) {
     const data = fs.readFileSync(
-      path.join(__dirname, "..", "seed-data", "recipies.json")
+      path.join(__dirname, "..", "seed-data", "recipes.json")
     );
     const stringified = data.toString();
     const parsed = JSON.parse(stringified);
