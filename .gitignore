@@ -140,5 +140,7 @@ vite.config.ts.timestamp-*
 
 **/config.json
 **/keyFile/*
-# Local Netlify folder
-.netlify
+
+# Node.js dependency lock files
+package-lock.json
+yarn.lock
