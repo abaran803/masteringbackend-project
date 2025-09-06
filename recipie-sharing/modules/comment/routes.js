@@ -8,10 +8,16 @@ const {
 } = require("./controllers");
 const router = express.Router();
 
-router.post("/", createComment);
+const {
+  validateCreateComment,
+  validateUpdateComment,
+  validateCommentId,
+} = require("./validation");
+
+router.post("/", validateCreateComment, createComment);
 router.get("/", getAllComment);
-router.get("/:id", getCommentById);
-router.put("/:id", updateComment);
-router.delete("/:id", deleteComment);
+router.get("/:id", validateCommentId, getCommentById);
+router.put("/:id", validateUpdateComment, updateComment);
+router.delete("/:id", validateCommentId, deleteComment);
 
 module.exports = router;

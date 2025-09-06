@@ -7,11 +7,16 @@ const {
   deleteIngredient,
 } = require("./controllers");
 const router = express.Router();
+const {
+  validateCreateIngredient,
+  validateUpdateIngredient,
+  validateIngredientId,
+} = require("./validation");
 
-router.post("/", createIngredient);
+router.post("/", validateCreateIngredient, createIngredient);
 router.get("/", getAllIngredients);
-router.get("/:id", getIngredientById);
-router.put("/:id", updateIngredient);
-router.delete("/:id", deleteIngredient);
+router.get("/:id", validateIngredientId, getIngredientById);
+router.put("/:id", validateUpdateIngredient, updateIngredient);
+router.delete("/:id", validateIngredientId, deleteIngredient);
 
 module.exports = router;

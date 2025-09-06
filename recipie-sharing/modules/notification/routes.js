@@ -1,6 +1,6 @@
 const express = require("express");
 const {
-  createNotification,
+  // createNotification,
   getAllNotification,
   getNotificationById,
   updateNotification,
@@ -8,10 +8,16 @@ const {
 } = require("./controllers");
 const router = express.Router();
 
-router.post("/", createNotification);
+const {
+  // validateCreateNotification,
+  validateUpdateNotification,
+  validateNotificationId,
+} = require("./validation");
+
+// router.post("/", validateCreateNotification, createNotification);
 router.get("/", getAllNotification);
-router.get("/:id", getNotificationById);
-router.put("/:id", updateNotification);
-router.delete("/:id", deleteNotification);
+router.get("/:id", validateNotificationId, getNotificationById);
+router.put("/:id", validateUpdateNotification, updateNotification);
+router.delete("/:id", validateNotificationId, deleteNotification);
 
 module.exports = router;

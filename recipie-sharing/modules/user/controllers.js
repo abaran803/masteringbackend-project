@@ -5,14 +5,14 @@ var bcrypt = require("bcrypt");
 const User = db.users;
 const Follow = db.follows;
 
-const signup = async (req, res) => {
+const signup = async (req, res, next) => {
   try {
     await User.create({
       username: req.body.username,
       email: req.body.email,
       password: bcrypt.hashSync(req.body.password, 8),
     });
-    res.send({ message: "User was registered successfully!" });
+    res.send({ message: "User registered successfully!" });
   } catch (err) {
     next(err);
   }
@@ -96,7 +96,6 @@ const followers = async (req, res, next) => {
           through: { attributes: [] },
         },
       ],
-      attributes: ["id"],
     });
     res.status(200).send({
       message: "Followers list fetched successfully",

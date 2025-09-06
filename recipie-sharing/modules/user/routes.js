@@ -9,6 +9,11 @@ const {
   followings,
 } = require("./controllers");
 const verifyToken = require("../../middleware/auth");
+const {
+  validateSignup,
+  validateSignin,
+  validateFollow,
+} = require("./validation");
 
 router.use(function (req, res, next) {
   res.header(
@@ -18,10 +23,10 @@ router.use(function (req, res, next) {
   next();
 });
 
-router.post("/signup", verifySignUp, signup);
-router.post("/signin", signin);
+router.post("/signup", validateSignup, verifySignUp, signup);
+router.post("/signin", validateSignin, signin);
 
-router.post("/follow/:id", verifyToken, follow);
+router.post("/follow/:id", validateFollow, verifyToken, follow);
 router.get("/followers", verifyToken, followers);
 router.get("/followings", verifyToken, followings);
 

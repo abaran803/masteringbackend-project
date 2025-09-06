@@ -6,12 +6,17 @@ const {
   updateRating,
   deleteRating,
 } = require("./controllers");
+const {
+  validateRatingId,
+  validateUpdateRating,
+  validateCreateRating,
+} = require("./validation");
 const router = express.Router();
 
-router.post("/", createRating);
+router.post("/", validateCreateRating, createRating);
 router.get("/", getAllRating);
-router.get("/:id", getRatingById);
-router.put("/:id", updateRating);
-router.delete("/:id", deleteRating);
+router.get("/:id", validateRatingId, getRatingById);
+router.put("/:id", validateUpdateRating, updateRating);
+router.delete("/:id", validateRatingId, deleteRating);
 
 module.exports = router;

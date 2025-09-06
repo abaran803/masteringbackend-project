@@ -17,17 +17,33 @@ const uploadFile = require("../../middleware/uploadFile");
 
 const upload = multer({ dest: "uploads/" });
 
-router.post("/", upload.array("photos"), uploadFile, createRecipe);
-router.get("/", getAllRecipe);
-router.get("/:id", getRecipeById);
-router.put("/:id", updateRecipe);
-router.delete("/:id", deleteRecipe);
+const {
+  validateCreateRecipe,
+  validateUpdateRecipe,
+  validateRecipeId,
+  validateAddComment,
+  validateAddRating,
+  validateAddTag,
+  validateAddCategories,
+} = require("./validation");
 
-router.post("/mark-favourite/:id", markFavourite);
-router.post("/add-comment/:id", addComment);
-router.post("/add-rating/:id", addRating);
-router.post("/add-tag/:id", addTag);
-router.post("/add-tag/:id/:tag_id", addTag);
-router.post("/add-categories/:id", addCategories);
+router.post(
+  "/",
+  upload.array("photos"),
+  uploadFile,
+  validateCreateRecipe,
+  createRecipe
+);
+router.get("/", getAllRecipe);
+router.get("/:id", validateRecipeId, getRecipeById);
+router.put("/:id", validateUpdateRecipe, updateRecipe);
+router.delete("/:id", validateRecipeId, deleteRecipe);
+
+router.post("/mark-favourite/:id", validateRecipeId, markFavourite);
+router.post("/add-comment/:id", validateAddComment, addComment);
+router.post("/add-rating/:id", validateAddRating, addRating);
+router.post("/add-tag/:id", validateAddTag, addTag);
+router.post("/add-tag/:id/:tag_id", validateAddTag, addTag);
+router.post("/add-categories/:id", validateAddCategories, addCategories);
 
 module.exports = router;
