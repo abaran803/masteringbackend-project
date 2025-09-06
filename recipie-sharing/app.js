@@ -29,6 +29,9 @@ const accessLogStream = fs.createWriteStream(
 );
 app.use(morgan("combined", { stream: accessLogStream }));
 
+app.get("/", (req, res) => {
+  res.status(200).send({ message: "OK" });
+});
 app.use("/api/users", authRoutes);
 app.use("/api/ingredients", verifyToken, ingredientRoutes);
 app.use("/api/recipes", verifyToken, recipeRoutes);
