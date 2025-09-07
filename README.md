@@ -191,8 +191,8 @@ The Recipe Sharing API implements a sophisticated database architecture with the
 
 Once the server is running, visit:
 
-- **Swagger UI:** `https://masteringbackend-project.onrender.com/api-docs/api-docs`
-- **Health Check:** `https://masteringbackend-project.onrender.com/api-docs/`
+- **Swagger UI:** `https://masteringbackend-project.onrender.com/api-docs`
+- **Health Check:** `https://masteringbackend-project.onrender.com`
 
 ## 🔗 API Endpoints
 
