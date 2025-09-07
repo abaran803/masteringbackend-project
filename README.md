@@ -266,3 +266,10 @@ This project is licensed under the ISC License.
 - [Node.js Project Structure Best Practices](https://medium.com/@jayjethava101/node-js-project-structure-best-practices-and-example-for-clean-code-3e1f5530fd3b)
 - [JWT Authentication with PostgreSQL](https://www.bezkoder.com/node-js-jwt-authentication-postgresql/)
 - [Recipe Sharing API Project](https://projects.masteringbackend.com/projects/build-your-own-recipe-sharing-api)
+
+## 🧪 Postman Collection
+
+- Download and import the Postman collection: [recipie-sharing/PostmanCollections.json](recipie-sharing/PostmanCollections.json)
+- Set environment variables in Postman:
+  - BASE_URL (e.g., http://localhost:3000)
+  - TOKEN (JWT from /api/users/signin)
