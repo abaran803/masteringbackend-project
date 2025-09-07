@@ -5,11 +5,8 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "localhost:3000",
   "basePath": "/",
-  "schemes": [
-    "http"
-  ],
   "securityDefinitions": {
     "bearerAuth": {
       "type": "apiKey",
@@ -19,6 +16,16 @@
     }
   },
   "paths": {
+    "/": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/users/signup": {
       "post": {
         "description": "",
@@ -316,9 +323,6 @@
                   "example": "any"
                 },
                 "instruction": {
-                  "example": "any"
-                },
-                "created_by": {
                   "example": "any"
                 },
                 "ingredients": {
@@ -1179,40 +1183,6 @@
       }
     },
     "/api/notifications/": {
-      "post": {
-        "description": "",
-        "parameters": [
-          {
-            "name": "body",
-            "in": "body",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "example": "any"
-                },
-                "message": {
-                  "example": "any"
-                }
-              }
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "404": {
-            "description": "Not Found"
-          }
-        }
-      },
       "get": {
         "description": "",
         "responses": {
