@@ -4,6 +4,8 @@
 
 ![Database Schema ERD](../recipie-sharing/er_diagram.png)
 
+View the interactive ER diagram on [dbdiagram.io](https://dbdiagram.io/d/68bd545161a46d388ed0906e).
+
 The Recipe Sharing API uses a comprehensive relational database design with **14 entities** and complex relationships.
 
 ## Core Entities

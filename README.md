@@ -97,6 +97,8 @@ The application uses a comprehensive relational database design with **14 entiti
 
 _Comprehensive Entity-Relationship Diagram showing all 14 database tables and their relationships_
 
+View the interactive ER diagram on [dbdiagram.io](https://dbdiagram.io/d/68bd545161a46d388ed0906e).
+
 ### Database Schema Overview
 
 The Recipe Sharing API implements a sophisticated database architecture with the following key components:
